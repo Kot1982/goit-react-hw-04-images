@@ -79,7 +79,8 @@ export default function App() {
   };
 
   const loadMore = () => {
-    setPage(prevState => prevState.page + 1);
+    setPage(prevState => prevState + 1);
+    console.log(page)
   };
 
   const pictureModalClick = picture => {
